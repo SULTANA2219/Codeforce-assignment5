@@ -18,7 +18,7 @@
 | | | |
 | pH | One prime | AC |
 | | | |
-| pG | Palindrome | AC |
+| pI | Palindrome | AC |
 | | | |
 | pP | Shape1 | AC |
 | | | |
