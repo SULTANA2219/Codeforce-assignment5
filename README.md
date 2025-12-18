@@ -1,5 +1,6 @@
 # Codeforce-assignment5
 # Sheet2(D-I), P, T, W
+# Given pdf to draw pirámides 
 
 **Name:** Sultana Jahan Tahmina<br>
 **ID:** E243419 <br>
