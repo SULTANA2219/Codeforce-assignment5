@@ -15,15 +15,14 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/D
 using namespace std;
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
     int x;
-    while (cin >> x) {
-        if (x == 1999) {
-            cout << "Correct\n";
+    
+    while(cin>>x){
+        if(x==1999){
+            cout<<"Correct\n";
             return 0;
-        } else {
-            cout << "Wrong\n";
+        } else{
+            cout<<"Wrong\n";
         }
     }
     return 0;
