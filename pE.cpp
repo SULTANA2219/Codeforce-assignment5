@@ -11,19 +11,21 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/E
 */
 
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
     int N;
     cin >> N;
 
-    int x, max = -1;
+    int x, mx = 0;
+
     for (int i = 0; i < N; i++) {
         cin >> x;
-        if (x > max) max = x;
+        if (x > mx)
+            mx = x;
     }
 
-    cout << max;
+    cout << mx << endl;
     return 0;
 }
