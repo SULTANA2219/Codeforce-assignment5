@@ -11,26 +11,24 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/I
 */
 
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
 int main() {
-    string N;
-    cin >> N;
+    int n, r = 0, x;
+    cin >> n;
 
-    string R = N;
-    reverse(R.begin(), R.end());
+    x = n;
 
-    int i = 0;
-    while (i < (int)R.size() - 1 && R[i] == '0') {
-        i++;
+    while (n) {
+        r = r * 10 + n % 10;
+        n /= 10;
     }
-    string trimmed = R.substr(i);
 
-    cout << trimmed << "\n";
+    cout << r << endl;
 
-    if (N == R) cout << "YES\n";
-    else cout << "NO\n";
+    if (r == x) cout << "YES";
+    else cout << "NO";
 
     return 0;
 }
