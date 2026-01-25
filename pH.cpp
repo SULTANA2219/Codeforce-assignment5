@@ -11,24 +11,27 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/H
 */
 
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-bool isPrime(int x) {
-    if (x < 2) return false;
-    for (int i = 2; i * i <= x; i++) {
-        if (x % i == 0)
-            return false;
-    }
-    return true;
-}
-
 int main() {
-    int X;
-    cin >> X;
+    int x;
+    cin >> x;
 
-    if (isPrime(X)) cout << "YES\n";
-    else cout << "NO\n";
+    bool prime = true;
+
+    for (int i = 2; i < x; i++) {
+        if (x % i == 0) {
+            prime = false;
+            break;
+        }
+    }
+
+    if (prime)
+        cout << "YES";
+    else
+        cout << "NO";
 
     return 0;
 }
+
