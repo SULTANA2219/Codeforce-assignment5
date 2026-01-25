@@ -11,15 +11,8 @@ https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/G
 */
 
 
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-
-long long factorial(int n) {
-    long long f = 1;
-    for (int i = 1; i <= n; i++)
-        f *= i;
-    return f;
-}
 
 int main() {
     int T, N;
@@ -27,9 +20,12 @@ int main() {
 
     while (T--) {
         cin >> N;
-        cout << factorial(N) << "\n";
-    }
 
+        long long f = 1;
+        for (int i = 1; i <= N; i++)
+            f = f * i;
+
+        cout << f << endl;
+    }
     return 0;
 }
-
